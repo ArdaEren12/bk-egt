@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="kaynak">metin islemleri</h1>
+    <p id="hedef">Arda EREN</p>
+
+<button onclick="benimfonksiyonum()">Metni degistir</button>
+<script>
+    function benimfonksiyonum(){
+        let metin=document.getElementById("kaynak").innerHTML
+        document.getElementById("hedef").innerHTML=metin;
+    }
+</script>
+<hr><br>
+
+<p>rasgele  sayı : <span id="rasgele"></span></p>
+<button onclick=""></button>
+<script>
+    document.getElementById("rasgele").innerHTML=Math.random()*10;
+</script>
+
+<hr><br>
+<p id="zaman"></p>
+
+<script>
+    const saat=new Date().getHours()
+    document.getElementById("zaman").innerHTML=saat;
+    console.log(saat); //consola saati yazdırdık
+    let karsilastirma;
+    if(saat<12){
+        karsilastirma="gunaydın"
+    }else if(saat<20){
+        karsilastirma="İyi günler"
+    }else{
+        karsilastirma="iyi aksamlar"
+    }
+    document.getElementById("zaman").innerHTML=karsilastirma;
+</script>
+
+
+<hr><br>
+
+<p id="sonuc"></p>
+<button onclick="islemfonksiyonu(15,28)">islem yap</button>
+
+
+<script>
+    function islemfonksiyonu(a,b){
+        let sonuc=a*b;
+        document.getElementById("sonuc").innerHTML=sonuc;
+    }
+</script>
+
+<hr><br>
+    
+</body>
+
+</html>

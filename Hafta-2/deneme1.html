@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Fonts Örneği</title>
+    
+    <!-- Preconnect (Performans için) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 900;
+            font-size: 3.5rem;
+            color: #667eea;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 2rem;
+            color: #764ba2;
+            margin: 2rem 0 1rem;
+        }
+        
+        h3 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 1.5rem;
+            color: #555;
+            margin: 1.5rem 0 0.5rem;
+        }
+        
+        p {
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        
+        .highlight {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            color: #667eea;
+            background: linear-gradient(120deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .font-showcase {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .font-box {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.3s ease;
+        }
+        
+        .font-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .font-name {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+        
+        .poppins-demo {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.2rem;
+        }
+        
+        .inter-demo {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.2rem;
+        }
+        
+        .playfair-demo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+        }
+        
+        code {
+            background: #f4f4f4;
+            padding: 0.2rem 0.5rem;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            color: #e83e8c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Google Fonts ile Güzel Tipografi</h1>
+        
+        <p>Bu sayfa <span class="highlight">Google Fonts CDN</span> kullanarak farklı font ailelerini göstermektedir.</p>
+        
+        <div class="card">
+            <h2>Font Aileleri Nedir?</h2>
+            <p>Font family (font ailesi), web sayfanızda kullanılan yazı tiplerini belirler. Google Fonts, ücretsiz ve yüksek kaliteli fontlar sunan bir CDN servisidir.</p>
+        </div>
+        
+        <h2>Popüler Font Örnekleri</h2>
+        
+        <div class="font-showcase">
+            <div class="font-box">
+                <div class="font-name">Poppins</div>
+                <p class="poppins-demo">Modern ve temiz bir font ailesi. Web tasarımında çok popülerdir.</p>
+                <code>font-family: 'Poppins', sans-serif;</code>
+            </div>
+            
+            <div class="font-box">
+                <div class="font-name">Inter</div>
+                <p class="inter-demo">Ekranlarda mükemmel okunabilirlik sunan modern bir UI fontu.</p>
+                <code>font-family: 'Inter', sans-serif;</code>
+            </div>
+            
+            <div class="font-box">
+                <div class="font-name">Playfair Display</div>
+                <p class="playfair-demo">Zarif başlıklar için ideal olan serif bir font ailesi.</p>
+                <code>font-family: 'Playfair Display', serif;</code>
+            </div>
+        </div>
+        
+        <h2>Nasıl Kullanılır?</h2>
+        
+        <h3>1. HTML Head Bölümüne Ekleyin:</h3>
+        <div class="card">
+            <code>&lt;link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"&gt;</code>
+        </div>
+        
+        <h3>2. CSS'de Kullanın:</h3>
+        <div class="card">
+            <code>body { font-family: 'Poppins', sans-serif; }</code>
+        </div>
+        
+        <h2>📋 Font CDN Linklerini Kopyala</h2>
+        
+        <h3>Tüm Fontlar (Bu Sayfada Kullanılan)</h3>
+        <div class="card">
+            <div style="background: white; padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
+                <code style="display: block; word-break: break-all; font-size: 0.9rem;">
+                    &lt;link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet"&gt;
+                </code>
+            </div>
+        </div>
+        
+        <h3>Tek Tek Font Linkleri</h3>
+        
+        <div class="font-showcase">
+            <div class="font-box">
+                <div class="font-name">🔤 Poppins</div>
+                <p style="font-size: 0.9rem; color: #888; margin-bottom: 1rem;">Modern ve temiz tasarımlar için</p>
+                <div style="background: #f8f9fa; padding: 0.8rem; border-radius: 5px;">
+                    <code style="display: block; word-break: break-all; font-size: 0.75rem;">
+                        &lt;link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"&gt;
+                    </code>
+                </div>
+            </div>
+            
+            <div class="font-box">
+                <div class="font-name">🔤 Inter</div>
+                <p style="font-size: 0.9rem; color: #888; margin-bottom: 1rem;">UI ve okunabilirlik için</p>
+                <div style="background: #f8f9fa; padding: 0.8rem; border-radius: 5px;">
+                    <code style="display: block; word-break: break-all; font-size: 0.75rem;">
+                        &lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"&gt;
+                    </code>
+                </div>
+            </div>
+            
+            <div class="font-box">
+                <div class="font-name">🔤 Playfair Display</div>
+                <p style="font-size: 0.9rem; color: #888; margin-bottom: 1rem;">Zarif başlıklar için</p>
+                <div style="background: #f8f9fa; padding: 0.8rem; border-radius: 5px;">
+                    <code style="display: block; word-break: break-all; font-size: 0.75rem;">
+                        &lt;link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"&gt;
+                    </code>
+                </div>
+            </div>
+        </div>
+        
+        <h2>🎯 Diğer Popüler Fontlar</h2>
+        
+        <div class="font-showcase">
+            <div class="font-box">
+                <div class="font-name">Roboto</div>
+                <p style="font-size: 0.9rem; color: #888; margin-bottom: 1rem;">Google'ın resmi fontu</p>
+                <div style="background: #f8f9fa; padding: 0.8rem; border-radius: 5px;">
+                    <code style="display: block; word-break: break-all; font-size: 0.75rem;">
+                        &lt;link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"&gt;
+                    </code>
+                </div>
+            </div>
+            
+            <div class="font-box">
+                <div class="font-name">Montserrat</div>
+                <p style="font-size: 0.9rem; color: #888; margin-bottom: 1rem;">Profesyonel görünüm</p>
+                <div style="background: #f8f9fa; padding: 0.8rem; border-radius: 5px;">
+                    <code style="display: block; word-break: break-all; font-size: 0.75rem;">
+                        &lt;link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"&gt;
+                    </code>
+                </div>
+            </div>
+            
+            <div class="font-box">
+                <div class="font-name">Open Sans</div>
+                <p style="font-size: 0.9rem; color: #888; margin-bottom: 1rem;">Çok okunabilir</p>
+                <div style="background: #f8f9fa; padding: 0.8rem; border-radius: 5px;">
+                    <code style="display: block; word-break: break-all; font-size: 0.75rem;">
+                        &lt;link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"&gt;
+                    </code>
+                </div>
+            </div>
+            
+            <div class="font-box">
+                <div class="font-name">Lato</div>
+                <p style="font-size: 0.9rem; color: #888; margin-bottom: 1rem;">Temiz ve profesyonel</p>
+                <div style="background: #f8f9fa; padding: 0.8rem; border-radius: 5px;">
+                    <code style="display: block; word-break: break-all; font-size: 0.75rem;">
+                        &lt;link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet"&gt;
+                    </code>
+                </div>
+            </div>
+            
+            <div class="font-box">
+                <div class="font-name">Raleway</div>
+                <p style="font-size: 0.9rem; color: #888; margin-bottom: 1rem;">İnce ve zarif</p>
+                <div style="background: #f8f9fa; padding: 0.8rem; border-radius: 5px;">
+                    <code style="display: block; word-break: break-all; font-size: 0.75rem;">
+                        &lt;link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"&gt;
+                    </code>
+                </div>
+            </div>
+            
+            <div class="font-box">
+                <div class="font-name">Nunito</div>
+                <p style="font-size: 0.9rem; color: #888; margin-bottom: 1rem;">Yumuşak ve arkadaşça</p>
+                <div style="background: #f8f9fa; padding: 0.8rem; border-radius: 5px;">
+                    <code style="display: block; word-break: break-all; font-size: 0.75rem;">
+                        &lt;link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"&gt;
+                    </code>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card" style="margin-top: 3rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+            <h3 style="color: white; margin-bottom: 1rem;">💡 Kullanım İpucu</h3>
+            <p style="color: white; margin-bottom: 0.5rem;">1. Yukarıdaki linklerden birini kopyalayın</p>
+            <p style="color: white; margin-bottom: 0.5rem;">2. HTML dosyanızın <code style="background: rgba(255,255,255,0.2); color: white;">&lt;head&gt;</code> bölümüne yapıştırın</p>
+            <p style="color: white; margin-bottom: 0.5rem;">3. CSS'de <code style="background: rgba(255,255,255,0.2); color: white;">font-family: 'Font İsmi', sans-serif;</code> şeklinde kullanın</p>
+            <p style="color: white; margin-top: 1rem; font-style: italic;">⚡ Performans için sadece kullanacağınız font ağırlıklarını (weight) seçin!</p>
+        </div>
+        
+        <p style="text-align: center; margin-top: 3rem; font-style: italic;">
+            Google Fonts ile web sitenize profesyonel bir görünüm kazandırın! 🎨
+        </p>
+    </div>
+</body>
+</html>

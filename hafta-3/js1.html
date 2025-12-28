@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Merhaba Nasılsın</p>
+    <button>Bana Tıkla</button>
+    <script>
+      const button = document.querySelector("button");
+      button.addEventListener("click", () => {
+        alert("Merhaba");
+      });
+    </script>
+    <hr />
+    <br />
+
+    <p id="deneme">Merhaba Nasılsın</p>
+    <button onclick="document.getElementById('deneme').innerHTML = 'İyiyim'">
+      Bana Tıkla
+    </button>
+    <hr />
+    <br />
+
+    <p id="test">adın me</p>
+    <p id="test2"></p>
+    <button onclick="document.getElementById('test2').innerHTML = 'Arda'">
+      cevap ver
+    </button>
+    <button onclick="document.getElementById('test2').innerHTML = ''">
+      Yazıyı sil
+    </button>
+    <button onclick="document.getElementById('test2').style.fontSize = '50px'">
+      Yazıyı büyüt
+    </button>
+    <button onclick="document.getElementById('test2').style.fontSize='15px'">
+      Yazıyı küçült
+    </button>
+    <button
+      onclick="document.getElementById('test2').style.color='red';document.getElementById('test2').style.backgroundColor='yellow'"
+    >
+      Yazıyı kırmızı yap
+    </button>
+    <button
+      onclick="document.getElementById('test2').style.color='yellow';document.getElementById('test2').style.backgroundColor='red'"
+    >
+      Yazıyı sarı yap
+    </button>
+    <hr />
+    <br />
+
+    <p id="renklendir">renklendir</p>
+    <button
+      style="background-color: red"
+      onclick="document.getElementById('renklendir').style.color='red';"
+    >
+      Yazıyı kırmızı yap
+    </button>
+    <button
+      style="background-color: yellow"
+      onclick="document.getElementById('renklendir').style.color='yellow';"
+    >
+      Yazıyı sarı yap
+    </button>
+    <button
+      style="background-color: blue"
+      onclick="document.getElementById('renklendir').style.color='blue';"
+    >
+      Yazıyı mavi yap
+    </button>
+    <hr />
+    <br />
+
+    <p id="gizle">gizle/göster</p>
+    <button onclick="document.getElementById('gizle').style.display='none';">
+      gizle
+    </button>
+    <button onclick="document.getElementById('gizle').style.display='block';">
+      göster
+    </button>
+    <hr />
+    <br />
+
+    <button
+      onclick="document.getElementById('ac').style.display='block';document.getElementById('kap').style.display='none';"
+    >
+      ışığı aç
+    </button>
+    <img
+      src="../image/png-clipart-the-light-bulb-incan.png"
+      alt=""
+      id="ac"
+      height="50px"
+    />
+    <button
+      onclick="document.getElementById('ac').style.display='none';document.getElementById('kap').style.display='block';"
+    >
+      ışığı kapat
+    </button>
+    <img src="../image/" alt="" id="kap" height="50px" />
+
+    <hr />
+    <br />
+
+    <p id="paragraf">Paragraf</p>
+    <button onclick="yazifonk()">Paragrafı değiştir</button>
+    <button onclick="yaziDegistir()">arkaplanı kırmızı yap</button>
+    <button onclick="yazırenklendir()">yazı rengini siyah yap</button>
+    <button onclick="yazırenklendirmavi()">yazı rengini mavi yap</button>
+    <button onclick="arkaplan()">arkaplanı transparent yap</button>
+    <script>
+      function yazifonk() {
+        document.getElementById("paragraf").innerHTML = "Paragraf degisti";
+      }
+
+      function yaziDegistir(params) {
+        document.getElementById("paragraf").style.backgroundColor = "red";
+      }
+      function yazırenklendir(params) {
+        document.getElementById("paragraf").style.color = "black";
+      }function yazırenklendirmavi(params) {
+        document.getElementById("paragraf").style.color = "blue";
+      }
+      function arkaplan(params) {
+        document.getElementById("paragraf").style.backgroundColor = "transparent";
+      }
+    </script>
+
+    <hr />
+    <br />
+    <script>
+        let name="arda"//bu degişebilir 
+        name="eren"
+        alert(name)
+        const name2="arda"//bu degişemez
+        name2="eren"
+        alert(name2)//ondan dolayı calısmaz
+
+        
+    </script>
+  </body>
+</html>

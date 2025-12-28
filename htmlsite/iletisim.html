@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../image/favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kişisel web site</title>
+</head>
+
+<body>
+    <div class="banner">
+        <a href="../htmlsite/index.html">Anasayfa</a>
+        <a href="../htmlsite/hakkimda.html">Hakkımda</a>
+        <a href="../htmlsite/iletisim.html">İletişim</a>
+    </div>
+    <section class="bas">
+        <H1>İletişim</H1>
+        <p><b>Email:</b> earda7965@gmail.com</p>
+        <p><b>Telefon:</b> +90 537 993 0351</p>
+    </section>
+    <form action="test.php" method="post" style="border: 5px solid black;margin: 5px;border-radius: 5px; padding: 15px;">
+        <h1 class="h1">Bana Ulaşın</h1>
+        <label for="name">İsim:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        TEL:<br>
+        <input type="tel" id="phone" name="phone"><br><br>
+        <label for="message">Mesaj:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+        <label for="tarih"></label>
+        <input type="date" id="tarih" name="tarih"><br><br>
+        <input type="radio" name="mesaj" id="">
+        <label for="mesaj">mesaj</label>
+        <input type="radio" name="mesaj" id="">
+        <label for="mesaj">telefon</label>
+        <input type="radio" name="mesaj" id="">
+        <label for="mesaj">mail</label> <br> <br>
+        <input type="submit" value="Gönder" style="text-align: center; ">
+        <input type="reset" value="Sil">
+    </form>
+
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: azure;
+    }
+      .banner{
+        text-align: center;
+        padding: 10px;  
+    }
+
+    .banner a {
+        color: #333;
+        overflow: hidden;
+        list-style-type: none;
+        text-decoration: none;
+        padding: 10px;
+        background-color: lightgrey;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .paragraf {
+        margin: 20px;
+        font-size: 18px;
+        line-height: 1.6;
+        border: #333 solid 2px;
+        padding: 2px;
+    }
+
+    .paragraf p {
+        margin: 20px;
+        font-size: 18px;
+        line-height: 1.6;
+        border: #333 solid 2px;
+        padding: 2px;
+    }
+
+    section.bas {
+        text-align: center;
+        padding-top: 15px;
+        margin: 10px;
+    }
+
+    .bas h1 {
+        margin-bottom: 10px;
+    }
+
+    .bas p {
+        font-size: 20px;
+        margin: 5px;
+    }
+</style>
+
+</html>

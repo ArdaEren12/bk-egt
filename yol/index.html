@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yol</title>
+    <style>
+        body {
+            background-image: url('jordania-asfalt-yol-yapiskanli-s.png');
+            background-color: #212121; /* Dark background to blend with road */
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+        .araba {
+            position: fixed;
+            top: 50px; /* Moved to top */
+            left: 50%;
+            /* Rotated 180deg and centered */
+            transform: translateX(-50%) rotate(180deg);
+            z-index: 1;
+            transition: transform 0.1s ease-out; /* For smooth movement */
+        }
+        .araba img {
+            width: 300px; /* Adjust size as needed */
+        }
+        .content {
+            height: 3000px; /* This creates the scrollable space */
+        }
+    </style>
+</head>
+<body>
+    <div class="araba">
+        <img src="pngtree-car-top-angle-png-image.png" alt="araba">
+    </div>
+    <div class="content"></div>
+
+    <script>
+        const car = document.querySelector('.araba');
+        // Base transform for centering and rotation
+        const baseTransform = 'translateX(-50%) rotate(180deg)';
+
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            // Move the car down at 1/5th of the scroll speed for a parallax effect
+            car.style.transform = `${baseTransform} translateY(${scrollY * 0.2}px)`;
+        });
+    </script>
+</body>
+</html>

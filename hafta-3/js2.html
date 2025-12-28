@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="sayac">sayaç</h1>
+    <button id="artir">artır</button>
+    <button id="azalt">azalt</button>
+    <script>
+        let sayac=0
+        document.querySelector("h1").innerHTML=sayac
+        document.querySelector("#artir").addEventListener("click",()=>{
+            sayac++
+            document.querySelector("h1").innerHTML=sayac
+        })
+        document.querySelector("#azalt").addEventListener("click",()=>{
+            sayac--
+            document.querySelector("h1").innerHTML=sayac
+        })
+    </script>
+    <hr><br>
+<p id="tutar"></p>
+    <script>
+        document.getElementById("tutar").innerHTML=5*6;
+    </script>
+    <hr><br>
+        <button onclick="document.write('merhaba')">merhaba</button>
+    <hr><br>
+<button onclick="window.print()">yazdır</button>
+</body>
+</html> 

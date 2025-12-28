@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>merhaba dünya</h1>
+
+    </div>
+    <table border="1">
+        <tr style="background-color: lightgrey; border: 2px solid black; ">
+            <td>Pazartesi</td>
+            <td>Salı</td>
+            <td>Çarşamba</td>
+            <td>Perşembe</td>
+            <td>Cuma</td>
+        </tr>
+        <tr>
+            <td>matematik</td>
+            <td rowspan="2" style="text-align:center;">pc</td>
+            <td colspan="2" style="text-align: center;">fizik</td>
+            <td>matematik</td>
+        </tr>
+        <tr>
+            <td>türkçe</td>
+            <td rowspan="3">Türkçe</td>
+            <td colspan="2">resim</td>
+
+        </tr>
+        </tr>
+        <tr>
+            <td>fizik</td>
+            <td>mat</td>
+            <td rowspan="2">tarih</td>
+            <td>pc</td>
+        </tr>
+        </tr>
+        <tr>
+            <td>kimya</td>
+            <td>fizik</td>
+            <td>beden</td>
+
+        </tr>
+    </table>
+<br><hr><br>
+    <form action="test.php" method="post" style="border: 5px solid black; background-color: lightslategrey;margin: 5px;border-radius: 5px; padding: 15px;">
+        <h1 class="h1">Bana Ulaşın</h1>
+        <label for="name">İsim:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        TEL:<br>
+        <input type="tel" id="phone" name="phone"><br><br>
+        <label for="message">Mesaj:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+        <input type="radio" name="mesaj" id="">
+        <label for="mesaj">mesaj</label>
+        <input type="radio" name="mesaj" id="">
+        <label for="mesaj">telefon</label>
+        <input type="radio" name="mesaj" id="">
+        <label for="mesaj">mail</label> <br> <br>
+        <input type="submit" value="Gönder" style="text-align: center; ">
+        <input type="reset" value="Sil">
+    </form>
+    <style>
+        .h1 {
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</body>
+
+</html>

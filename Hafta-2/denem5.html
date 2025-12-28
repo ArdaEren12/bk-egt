@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropbtn {
+            background-color: blue;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        .dropbtn a:hover{
+            color: black;
+            padding: 15px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .doropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dorpdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index:1;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="doropdown">
+        <button class="dropbtn">menü</button>
+
+        <div class="dorpdown-content">
+            <a href="#">link1</a>
+            <a href="#">link2</a>
+            <a href="#">link3</a>
+        </div>
+    </div>
+</body>
+
+</html>
